@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Get the current battery percentage and charging state

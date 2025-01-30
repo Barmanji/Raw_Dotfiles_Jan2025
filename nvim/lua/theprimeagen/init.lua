@@ -80,5 +80,5 @@ vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 lua = ColorMyPencils()
 -- Set clipboard to use system clipboard
-vim.cmd([[set clipboard=unnamedplus]])
+vim.opt.clipboard = "unnamedplus"  -- Keep system clipboard
 

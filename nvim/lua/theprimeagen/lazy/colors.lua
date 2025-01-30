@@ -2,13 +2,12 @@ function ColorMyPencils(color)
     color = color or "tokyonight-moon"
     vim.cmd.colorscheme(color)
 --for left side bar number line colors
-    vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = '#51B3EC',})
+    vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = '#636DA6',})
+    vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#636DA6',  })
     vim.api.nvim_set_hl(0, 'LineNr', { fg = 'white',  })
-    vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#FB508F',  })
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
 -- Change color for specific diagnostic messages
 vim.api.nvim_set_hl(0, 'DiagnosticUnnecessary', { fg = '#808080' }) -- Unused or unnecessary variables
 
@@ -35,7 +34,7 @@ return {
             require("gruvbox").setup({
                 terminal_colors = true, -- add neovim terminal colors
                 undercurl = true,
-                underline = false,
+                underline = true,
                 bold = true,
                 italic = {
                     strings = false,
